@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>File Upload</title>
+        <title>User Signup</title>
 
         <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
@@ -11,27 +11,25 @@
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet">
-        <link rel="stylesheet" href="Assets/file_upload.css">
+        <link rel="stylesheet" href="Assets/sign_up.css">
     </head>
 
     <body>
         <header>
             <div id="header">
                 <i class="material-icons" id="description_icon">description</i>
-                File Upload
+                Sign Up
             </div>
         </header>
-        <section id="upload_section">
-            <img src="Assets/Images/texture1.jpg" id="back_img" alt="cloud_image">
-            
-            <form method="POST" action="/" enctype="multipart/form-data">
-                <div class="dropzone">
-                    <i class="material-icons" id="backup_icon">backup</i>
-                    <p>Upload/Drag & Drop here.</p>
-                    <input type="file" class="upload-input" />    
-                </div>
-                <input type="submit" class="upload_button" name="uploadbutton" value="Upload">
-            </form>
-        </section>
+        <form class="container box">
+            <h1>Sign Up</h1>
+            <input type="text" name="name_field" placeholder="Name">
+            <input type="text" name="user_field" placeholder="Username">
+            <input type="email" name="email_field" placeholder="Email ID">
+            <input type="tel" name="phone_field" placeholder="Phone Number">
+            <input type="password" name="password_field" placeholder="Password">
+            <input type="submit" name="submit_button" value="Sign Up">
+            <a href="#" target="_blank">Already registered? Goto Login Page.</a>
+        </form>
     </body>
 </html>
