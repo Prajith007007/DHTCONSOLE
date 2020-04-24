@@ -23,12 +23,12 @@
         </header>
         <section id="upload_section">
             <img src="Assets/Images/texture1.jpg" id="back_img" alt="cloud_image">
-            
-            <form method="POST" action="/" enctype="multipart/form-data">
+
+            <form action="Fodgers_DHT-master/utils/file_upload.php" method="POST" enctype="multipart/form-data">
                 <div class="dropzone">
                     <i class="material-icons" id="backup_icon">backup</i>
                     <p>Upload/Drag & Drop here.</p>
-                    <input type="file" class="upload-input" />    
+                    <input type="file" name="file" class="upload-input" />
                 </div>
                 <input type="submit" class="upload_button" name="uploadbutton" value="Upload">
             </form>
