@@ -12,3 +12,4 @@
     $result = shell_exec("python encryption.py");
     echo $result;
 ?>
+// This is the file upload part.
