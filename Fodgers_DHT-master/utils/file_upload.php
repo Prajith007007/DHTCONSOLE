@@ -9,7 +9,5 @@
 
       move_uploaded_file($file_tem_loc, $file_store);
     }
-    $result = shell_exec("python encryption.py");
-    echo $result;
+    shell_exec("python encryption.py");
 ?>
-// This is the file upload part.
