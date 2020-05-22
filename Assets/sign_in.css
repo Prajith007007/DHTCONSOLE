@@ -1,0 +1,109 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    position: relative;
+    background: url(Images/cloud4_1600x600.png);
+    height: 100vh;
+    background-size: cover;
+    background-position: 0 0;
+    background-repeat: repeat-x;
+    animation: animate 80s infinite;
+}
+@keyframes animate
+{
+    0% {
+        background-position: 0 0;
+    }
+    50%{
+        background-position: 100% 0;
+    }
+    100% {
+        background-position: 0 0;
+    }
+}
+#header{
+    width: 100%;
+    background-color: #004d66;
+    color: white;
+    box-shadow: 0 3px 0 0 #00e6e6;
+    height: 75px;
+    font-size: 44px;
+    padding-top: 5px;
+    padding-left: 5px;
+}
+i#description_icon {
+    font-size: 35px;
+}
+
+.box{
+    width: 85%;
+    padding: 10px 0px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background: #004d66;
+    text-align: center;
+    box-shadow: 10px 10px 5px grey;
+}
+.box h1{
+    color: white;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+.box input[type= "text"],.box input[type= "password"]{
+    border: 0;
+    background: none;
+    display: block;
+    margin: 15px auto;
+    text-align: center;
+    border: 2px solid #3498DB;
+    padding: 14px 10px;
+    width: 65%;
+    outline: none;
+    color: white;
+    border-radius: 24px;
+    transition: 0.25s;
+}
+.box input[type= "text"]:hover,.box input[type= "password"]:hover{
+    width: 80%;
+    border-color: #2ecc71;   
+}
+.box input[type="submit"]{
+    border: 0;
+    background: none;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border: 2px solid #2ecc71;
+    padding: 14px 40px;
+    cursor: pointer;
+    outline: none;
+    color: white;
+    border-radius: 24px;
+    transition: 0.25s;
+}
+.box input[type="submit"]:hover{
+    background: #2ecc71;
+}
+a{
+    color:#d7e0ea
+}
+a:hover{
+    color: #3498DB   
+}
+
+@media (min-width:768px){
+    .box{
+        width: 60%;
+        padding: 40px;
+    }
+    .box input[type= "text"],.box input[type= "password"]{
+        width:50%;
+        margin:20px auto;
+    }
+    .box input[type= "text"]:hover,.box input[type= "password"]:hover{
+        width: 70%;
+    }
+}
