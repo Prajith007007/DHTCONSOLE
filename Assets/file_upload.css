@@ -2,7 +2,7 @@ body{
     padding: 0;
     margin: 0;
     position: relative;
-    background:url(Images/cloud2_1200x440.jpg);
+    background:url(Images/rsz_cloud.png);
     height: 100vh;
     background-size: cover;
     background-position: 0 0;
@@ -106,6 +106,6 @@ i#description_icon {
         font-size: 30px;
     }
     .dropzone p{
-        font-size: 40px;
+        font-size: 30px;
     }
 }
